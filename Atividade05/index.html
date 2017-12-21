@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Usage</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  
+  <link rel='stylesheet prefetch' href='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.5/angular-material.css'>
+<link rel='stylesheet prefetch' href='https://material.angularjs.org/1.1.5/docs.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div ng-controller="AppCtrl as ctrl" class="md-padding selectdemoBasicUsage" ng-cloak="" layout="column" ng-app="MyApp">
+
+  <md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Cadastro de Clientes</span>
+        <span class="md-subhead">Faça aqui o seu cadastro!</span>
+      </md-card-title-text>
+    </md-card-title>
+
+    <md-card-content>
+      <div layout="row">
+        <md-input-container>
+          <label>Nome</label>
+          <input>
+        </md-input-container>
+        
+        <md-input-container>
+          <label>Sobrenome</label>
+          <input>
+        </md-input-container>
+        
+        <md-input-container>
+          <label>Nº do cartão de crédito</label>
+          <input>
+        </md-input-container>
+      </div>
+      
+      <div>
+         <span class="md-subhead">Endereço residencial</span><br>
+       <md-input-container>
+          <label>Rua</label>
+          <input>
+        </md-input-container>
+        
+         <md-input-container>
+          <label>Número</label>
+          <input>
+        </md-input-container>
+        
+         <md-input-container>
+          <label>Bairro</label>
+          <input>
+        </md-input-container>
+        
+         <md-input-container>
+          <label>CEP</label>
+          <input>
+        </md-input-container>
+        
+        <md-input-container>
+          <label>UF</label>
+          <md-select ng-model="ctrl.userState">
+            <md-option><em>Selecione</em></md-option>
+            <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" >
+              {{state.abbrev}}
+            </md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+      
+      <div>
+        <span class="md-subhead">Endereço comercial</span><br>
+        <md-input-container>
+          <label>Rua</label>
+          <input>
+        </md-input-container>
+        
+         <md-input-container>
+          <label>Número</label>
+          <input>
+        </md-input-container>
+        
+         <md-input-container>
+          <label>Bairro</label>
+          <input>
+        </md-input-container>
+        
+         <md-input-container>
+          <label>CEP</label>
+          <input>
+        </md-input-container>
+        
+        <md-input-container>
+          <label>UF</label>
+          <md-select ng-model="ctrl.userState1">
+            <md-option><em>Selecione</em></md-option>
+            <md-option ng-repeat="state in ctrl.states" ng-value="state.abbrev" >
+              {{state.abbrev}}
+            </md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+    </md-card-content>
+  </md-card>
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js'></script>
+<script src='https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.5/angular-material.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
